@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/css/Dgoalscss.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <title>Diet Goals</title>
+</head>
+<body>
+    
+  <div class="container">
+    <h1><button class="backbt" onclick="goToPage2()">&#10094;</button>Calories Tracker</h1>
+    <div id="error-message" class="error"></div>
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" placeholder="Enter item name">
+
+    <label for="caloriesCount">Calories Count:</label>
+    <input type="number" id="caloriesCount" placeholder="Enter calories count">
+
+    <label for="datePicker">Date:</label>
+    <input type="date" id="datePicker">
+
+    <button onclick="addMeal()">Add Meal</button>
+
+    <div id="mealList"></div>
+  </div>
+
+  <script src="../static/js/Dgoalsjs.js"></script>
+</body>
+</html>

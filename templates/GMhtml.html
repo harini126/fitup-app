@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Timer</title>
+  <link rel="stylesheet" href="../static/css/GMcss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <header class="sticky-header">
+     <a href="homehtml.html" style="text-decoration: none;" style="text-decoration: none; color: #000000;"><div class="back-arrow">&#10094;</div></a>
+      <h2>Muscle Gain Workouts</h2>
+    </header>
+    
+        
+<div class="slideshow-container">
+
+  <div class="slide fade">
+    <h3>Knee Push-Ups</h3>
+    <img src="https://i.postimg.cc/ncFpXJG4/istockphoto-1281672735-170667a.jpg" alt="Image 1">
+    <div class="slide-caption">Knee Push-ups strengthen the chest, shoulders, and triceps and are a versatile bodyweight exercise for muscle development.</div>
+  </div>
+
+ 
+
+  <div class="slide fade">
+    <h3>Incline Push-Ups</h3>
+    <img src="https://i.postimg.cc/9FcbsWGq/1.jpg" alt="Image 3">
+    <div class="slide-caption">Incline Push-ups strengthen the chest, shoulders, and triceps and are a versatile bodyweight exercise for muscle development.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Tricep Dips</h3>
+    <img src="https://i.postimg.cc/y8JMSN3S/best-exercises-for-stronger-arm-muscles-tricep-dip-2.gif" alt="Image 4">
+    <div class="slide-caption">Dips primarily work the chest and triceps. They can be performed using parallel bars or with a bench.</div>
+  </div>
+  <div class="slide fade">
+<h3>Side Plank</h3>
+    <img src="https://i.postimg.cc/jS35s9Hx/screenshot-89-1.png" alt="Image 1">
+    <div class="slide-caption">Planks and other core exercises help strengthen the abdominal and core muscles, providing stability and supporting overall strength.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Russian Twists</h3>
+    <img src="https://i.postimg.cc/1Xz5611Y/shutterstock-1312978856.webp" alt="Image 2">
+    <div class="slide-caption">Russian twists work the obliques and help strengthen the core and side abdominal muscles.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Squats</h3>
+    <img src="https://i.postimg.cc/mrgYLhDk/12b875db67e1c1767cd9d54f4fe2388b.gif" alt="Image 3">
+    <div class="slide-caption">Squats target the quadriceps, hamstrings, glutes, lower back, and core. They are considered one of the most effective exercises for building overall lower body strength and muscle mass.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Lunges</h3>
+    <img src="https://i.postimg.cc/LsLkBMMS/https-lottiefiles-com-animations-lunge-ls3pmle0a0.gif" alt="Image 4">
+    <div class="slide-caption">Lunges engage the quadriceps, hamstrings, and glutes, helping to build leg strength and muscle.</div>
+  </div>
+<div class="slide fade">
+    <h3>Bulgarian Split Squats</h3>
+    <img src="https://i.postimg.cc/4xpZYxhx/https-lottiefiles-com-animations-bulgarian-split-squat-jump-ri.gif" alt="Image 4">
+    <div class="slide-caption">Bulgarian split squats are an excellent exercise for targeting and building the muscles of the lower body, particularly the quadriceps, hamstrings, and glutes. They provide an opportunity for progressive overload by increasing the weight over time.</div>
+  </div>
+ 
+  <div class="slide fade">
+    <h3>Bench Press</h3>
+    <img src="https://i.postimg.cc/76pDfTmh/https-lottiefiles-com-animations-bench-press-l9uqmi4m7k.gif" alt="Image 4">
+    <div class="slide-caption">The bench press targets the chest, shoulders, and triceps. It's a fundamental exercise for building a strong and well-developed chest.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Crunches</h3>
+    <img src="https://i.postimg.cc/TYnW4J4j/https-lottiefiles-com-animations-reverse-crunches-79p2fmts7z.gif" alt="Image 4">
+    <div class="slide-caption">While crunches have their place in core training and can help you maintain strong and defined abdominal muscles, it's essential to incorporate a well-rounded strength training routine that includes compound exercises for the entire body if your goal is to gain muscle mass.</div>
+  </div>
+
+
+
+
+ 
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+       <div class="exercise-container">
+      
+      
+       <div class="additional-text">
+        <!-- Additional text can be added dynamically here -->
+     
+      </div>
+      <div class="stopwatch-container">
+        <div id="stopwatch">
+         <!-- CURRENT TIME -->
+         <div id="sw-time">00:00:00</div>
+   
+         <!-- CONTROLS -->
+         <input type="button" value="Reset" id="sw-rst" disabled>
+         <input type="button" value="Start" id="sw-go" disabled>
+         
+       </div>
+     <div id="totalTime"></div>
+   <button onclick="resetTotalTime()" id="res">Reset Total Time</button>
+   <div id="totalTimeDisplay"></div>
+   
+         </div>
+     
+    </div>
+    
+  </div>
+  <script src="../static/js/GMjs.js"></script>
+</body>
+</html>

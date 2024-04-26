@@ -1,0 +1,112 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+   
+    background: white;
+    color: #000000; /* Darker text color */
+    }
+    
+    .container {
+      max-width: 75%;
+      /* Adjusted for mobile size */
+      margin: 20px auto;
+      padding: 20px;
+      
+      border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  
+    backdrop-filter: blur(15px); /* Glass-like transparent effect */
+    }
+    
+.backbt{
+  background-color:  #fff;
+color: #365954;
+   font-size: x-large;
+}
+.backbt:hover{
+   background-color:  #fff;
+   color: #365954;
+}
+
+    
+    h1{
+      text-align:left;
+      color: #365954; /* Darker Pink title color */
+    margin-right: 45px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    input {
+      width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    color: #4a4a4a;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    }
+    
+    button {
+      background: #365954; /* Darker Pink button color */
+      color: #ffffff; /* Darker text color */
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out; /* Micro animation */
+    }
+    
+    button:hover {
+      background: #67A299; /* Slightly darker Pink on hover */
+}
+    
+    .error {
+      color: red;
+      margin-bottom: 20px;
+    }
+    
+    .meal-card {
+      background-color: #fff;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      color: #4a4a4a; /* Darker text color */
+    }
+    .meal-card:hover {
+        transform: scale(1.05); /* Enlarge on hover */
+    }
+    .meal-card h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .meal-card p {
+      margin: 5px 0;
+    }
+    
+    .meal-card button {
+      background-color: #365954;
+      color: #fff;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 8px;
+      margin-right: 8px;
+    }
+    
+    .meal-card button:hover {
+      background-color: #67A299;
+    }

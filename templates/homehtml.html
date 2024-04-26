@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Footer Example</title>
+    <link rel="stylesheet" href="../static/css/homecss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+ 
+    <!-- Other meta tags and stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-e6zVp/3B9o5+ddQ8PFvMN7Aq3VyF6zXLpN+e3ItSjEzwoegt63pWj8F+l0L4pTdx" crossorigin="anonymous">
+ 
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h3>Hey!👋<br>Welcome to Fit-Up</h3>
+       
+    </div>
+    
+<div class="content">
+   <div class="section" id="section1">
+     <div class="card-container">
+    <div class="card" onclick="showText('Lose Weight')" id="loseweightcard">
+    
+      
+      <div class="card-content">
+       
+        <div class="text"><b>Lose Weight    &#10095;</b><br>
+        <img class="image-abc" src="https://i.postimg.cc/sx5Syd3Y/23117266-16335684894t94.png" alt="Workouts Image">
+        <span>9 workouts</span>
+      </div>
+     
+      </div>
+      
+    </div>
+     <div class="card" id="weightGainCard">
+      
+      <div class="card-content">
+        <div class="text"><b>Gain Weight &#10095;</b><br>
+          <img class="image-abc" src="https://i.postimg.cc/sx5Syd3Y/23117266-16335684894t94.png" alt="Workouts Image">
+          <span>9 workouts</span>
+        </div>
+      </div>
+    </div>
+     <div class="card" id="muscleGainCard">
+      
+      <div class="card-content">
+        <div class="text"><b>Gain Muscle &#10095;</b><br>
+          <img class="image-abc" src="https://i.postimg.cc/sx5Syd3Y/23117266-16335684894t94.png" alt="Workouts Image" >
+          <span>10 workouts</span>
+        </div>
+      </div>
+    </div>
+     <div class="card" id="stableWeightCard">
+      
+      <div class="card-content">
+        <div class="text"><b>Stable Weight &#10095;</b><br>
+          <img class="image-abc" src="https://i.postimg.cc/sx5Syd3Y/23117266-16335684894t94.png" alt="Workouts Image">
+          <span>8 workouts</span>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ </div>
+  <div class="section" id="section2">
+    <div class="card-container2">
+    <div class="card2" id="LW"><a href="LWdiethtml.html" class="random">
+     <div class="card2-content"> 
+        <div class="text"><b>Lose Weight &#10095;</b><br>
+          
+        </div>
+      </div></a>
+    </div>
+     <div class="card2" id="GW"><a href="GWdiethtml.html" class="random">
+      <div class="card2-content">
+        <div class="text"><b>Gain Weight &#10095;</b><br>
+          
+        </div>
+      </div></a>
+    </div>
+     <div class="card2" id="GM"><a href="GMdiethtml.html" class="random">
+      <div class="card2-content">
+        <div class="text"><b>Gain Muscle &#10095;</b><br>
+          
+        </div>
+      </div></a>
+    </div>
+     <div class="card2" id="SW"><a href="SWdiethtml.html" class="random">
+      <div class="card2-content">
+        <div class="text"><b>Stable Weight &#10095;</b><br>
+          
+        </div>
+      </div></a>
+    </div>
+ 
+  </div>
+  </div>
+        <div class="section" id="section3"> <h3 class="tracker">Daily Time Spent</h3>
+          <div id="storedDataDisplay"></div>
+                               
+
+        </div>
+        <div class="section" id="section4">  <div class="isod">
+         <div class="glint">
+            <div class="glint-fig">
+              <div class="grail"><a href="Wgoalshtml.html" class="goal"> Workout Goals<br><span class="light-icon">&#10148;</span></a></div>
+            </div>
+            <div class="shower"></div>
+          </div>
+        
+        <div class="glint">
+            <div class="glint-fig">
+              <div class="grail"> <a href="Dgoalshtml.html" class="goal">Diet Goals<br><span class="light-icon"> &#10148;</span></a></div>
+            </div>
+            <div class="shower2"></div>
+          </div>
+        </div>
+        </div>
+  
+   </div>
+<div class="footer">
+    <div class="icon-container">
+    <div class="icon active" data-section="section1" id="icon1">
+       <img src="https://i.postimg.cc/CM9xMt4p/exercise-icon-png-17.png" alt="Icon 1" width="40" height="auto">
+        <p>Workouts</p>
+    </div>
+    <div class="icon" data-section="section2" >
+        <img src="https://i.postimg.cc/HknmQ9z9/10202115.png" alt="Icon 2" width="40" height="auto">
+        <p>Diet</p>
+    </div>
+    <div class="icon" data-section="section3" >
+        <img src="https://i.postimg.cc/jdKPdLcb/date-symbol-clipart-3.png" alt="Icon 3" width="40" height="auto">
+        <p>Sats</p>
+    </div>
+    <div class="icon" data-section="section4">
+        <img src="https://i.postimg.cc/PfDYCqQy/11006638.png" alt="Icon 4" width="40" height="auto">
+        <p>Goals</p>
+    </div>
+</div>
+</div>
+  <div class="hidden" id="loseWeightWorkouts">
+    <div class="main">
+        <div class="headingbtn"><h3><button onclick="goBack()">&#10094;</button>Weight Loss Workouts <a href="LWhtml.html" class="next">Go &rarr;</a></h3>
+        </div>
+        <div class="workout-list" id="workoutList">
+            <div class="workout-item">Jumping Jacks</div>
+            <div class="workout-item" id="workout2">High Knees</div>
+            <div class="workout-item" id="workout1">Burpees</div>
+            <div class="workout-item" id="workout1">Mountain Climbing</div>
+            <div class="workout-item" id="workout1">Squats</div>
+            <div class="workout-item" id="workout2">Plank</div>
+            <div class="workout-item" id="workout1">Crunches</div>
+            <div class="workout-item" id="workout2">Lunges</div>
+            <div class="workout-item" id="workout2">Push-Ups</div>
+        </div>
+      
+    </div>
+</div>
+
+<div class="hidden" id="GainWeightWorkouts">
+  <div class="main">
+    <div class="headingbtn">
+      <h3>
+        <button onclick="goBack()">&#10094;</button>
+Weight Gain Workouts <a href="GWhtml.html" class="next">Go &rarr;</a>
+      </h3>
+    </div>
+    <div class="workout-list" id="workoutList">
+      <div class="workout-item">Burpees</div>
+      <div class="workout-item" id="workout2">Pull-Ups</div>
+      <div class="workout-item" id="workout1">Bench Press</div>
+      <div class="workout-item" id="workout1">Squats</div>
+      <div class="workout-item" id="workout1">Tricep Dips</div>
+      <div class="workout-item" id="workout2">Plank</div>
+      <div class="workout-item" id="workout1">Crunches</div>
+      <div class="workout-item" id="workout2">Lunges</div>
+      <div class="workout-item" id="workout2">Push-Ups</div>
+    </div>
+  </div>
+</div>
+<div class="hidden" id="GainMuscleWorkouts">
+  <div class="main">
+    <div class="headingbtn">
+      <h3>
+        <button onclick="goBack()">&#10094;</button> Muscle Gain Workouts <a href="GMhtml.html" class="next">Go &rarr;</a>
+      </h3>
+    </div>
+    <div class="workout-list" id="WorkoutList">
+      <div class="workout-item">Knee Push-Ups</div>
+      <div class="workout-item">Incline Push-Ups</div>
+      <div class="workout-item">Tricep Dips</div>
+      <div class="workout-item">Side Plank</div>
+      <div class="workout-item">Crunches</div>
+      <div class="workout-item">Lunges</div>
+      <div class="workout-item">Russian Twist</div>
+      <div class="workout-item">Bulgarian Split Squats</div>
+      <div class="workout-item">Squats</div>
+      <div class="workout-item">Bench Press</div>
+   
+
+     
+    </div>
+  </div>
+</div>
+<div class="hidden" id="stableWeightWorkouts">
+  <div class="main">
+    <div class="headingbtn">
+      <h3>
+        <button onclick="goBack()">&#10094;</button> Stable Gain Workouts <a href="SWhtml.html" class="next">Go &rarr;</a>
+      </h3>
+    </div>
+    <div class="workout-list" id="WorkoutList">
+      <div class="workout-item">Jumping Jacks</div>
+      <div class="workout-item">Burpees</div>
+      <div class="workout-item">Squats</div>
+      <div class="workout-item">Plank</div>
+      <div class="workout-item">Mountain Climbing</div>
+      <div class="workout-item">Leg Rises</div>
+      <div class="workout-item">Lunges</div>
+      <div class="workout-item">Push-Ups</div>
+    </div>
+  </div>
+</div>
+<script src="../static/js/homejs.js"></script>
+<script>
+
+  // Retrieve stored data from local storage
+  var storedData = localStorage.getItem('totalTimeData');
+  
+  // If there is data stored in local storage
+  if (storedData !== null) {
+    // Parse the JSON data
+    var parsedData = JSON.parse(storedData);
+  
+    // Get the element where you want to display the stored data
+    var storedDataDisplay = document.getElementById('storedDataDisplay');
+  
+    // Loop through the parsed data
+    for (var date in parsedData) {
+      if (parsedData.hasOwnProperty(date)) {
+        // Create a new div element for the time card
+        var timeCard = document.createElement('div');
+        timeCard.classList.add('time-card');
+  
+        // Create a new paragraph element to display the stored data
+        var paragraph = document.createElement('p');
+  
+        // Create an image element
+        var image = document.createElement('img');
+        image.src = 'https://i.postimg.cc/3N1ZYWsh/R.png'; // Set image source
+        image.style.height = '1em'; // Set image height to match font height
+        image.style.verticalAlign = 'middle'; // Align image vertically with text
+  
+        // Determine the appropriate time unit based on the value stored in local storage
+        var totalTime = parsedData[date];
+        var timeUnit;
+        if (totalTime >= 3600) {
+          totalTime /= 3600;
+          timeUnit = "hours";
+        } else if (totalTime >= 60) {
+          totalTime /= 60;
+          timeUnit = "minutes";
+        } else {
+          timeUnit = "seconds";
+        }
+  
+        // Set the text content of the paragraph to display the date, image, total time, and time unit
+        paragraph.innerHTML =  "<strong>" + date + "</strong>"+"<br><br>" + image.outerHTML + "      " + totalTime.toFixed(2) + " " + timeUnit;
+  
+        // Create a delete button
+        var deleteButton = document.createElement('button');
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add('delete-button');
+        deleteButton.setAttribute('data-date', date); // Set data attribute to store the date
+  
+        // Add click event listener to the delete button
+        deleteButton.addEventListener('click', function() {
+          var dateToDelete = this.getAttribute('data-date');
+          
+          // Confirm deletion
+          var confirmDelete = window.confirm("Are you sure you want to delete?");
+          
+          if (confirmDelete) {
+            // Remove the item from parsedData
+            delete parsedData[dateToDelete];
+            // Update local storage with the modified data
+            localStorage.setItem('totalTimeData', JSON.stringify(parsedData));
+            // Remove the time card element from the display
+            this.parentElement.parentElement.remove();
+          }
+        });
+  
+        // Append the paragraph element and delete button to the time card
+        timeCard.appendChild(paragraph);
+        timeCard.appendChild(deleteButton);
+  
+        // Append the time card to the storedDataDisplay element
+        storedDataDisplay.appendChild(timeCard);
+      }
+    }
+  } else {
+    // If there is no data stored in local storage
+    var storedDataDisplay = document.getElementById('storedDataDisplay');
+    storedDataDisplay.textContent = "Start Working out";
+  }
+  window.onload = function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    var sectionToNavigate = urlParams.get('section');
+  
+    // Hide all sections
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
+  
+    if (sectionToNavigate && document.getElementById(sectionToNavigate)) {
+      // If a valid section is specified in the URL parameters, show that section
+      document.getElementById(sectionToNavigate).style.display = 'flex';
+    } else {
+      // If no valid section is specified or the specified section does not exist,
+      // show the default section
+      document.getElementById('section1').style.display = 'flex';
+    }
+  };
+</script>
+
+</body>
+</html>

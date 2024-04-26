@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Timer </title>
+  <link rel="stylesheet" href="../static/css/SWcss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <header class="sticky-header">
+     <a href="homehtml.html" style="text-decoration: none;" style="text-decoration: none; color: #000000;"><div class="back-arrow">&#10094;</div></a>
+      <h2>Stable Weight Workouts</h2>
+    </header>
+    
+        
+<div class="slideshow-container">
+ 
+
+  <div class="slide fade">
+    <h3>Jumping Jacks</h3>
+    <img src="https://i.postimg.cc/x1S4zQ7v/https-lottiefiles-com-animations-jumping-jack-q3nn7crkd4.gif" alt="Image 1">
+    <div class="slide-caption">Jumping jacks can be one part of your overall fitness program, along with other activities like strength training, flexibility exercises, and a balanced diet. Consistency in your exercise routine and managing your calorie intake are key factors in weight maintenance.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Leg rises</h3>
+    <img src="https://i.postimg.cc/wj3LVPDS/https-lottiefiles-com-animations-leg-raises-5hkfbxoylp.gif" alt="Image 2">
+    <div class="slide-caption">Leg raises are a bodyweight exercise that can contribute to your fitness routine and help maintain a constant weight. They primarily target the muscles in your lower abdomen and hip flexors.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Burpees</h3>
+    <img src="https://i.postimg.cc/Hsj3Zr0T/Zz05-Mz-Rk-OTE1-NWYy-OGMw-Yz-M4-Njdk-Mj-Bj-Yj-Bh-NTll-N2-Qy-Mg.gif" alt="Image 3">
+    <div class="slide-caption">Burpees are a high-intensity, full-body exercise that can be effective for maintaining a constant weight when incorporated into a well-rounded fitness routine.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Mountain Climbing</h3>
+    <img src="https://i.postimg.cc/HL7kB9nb/Zz0x-OTFj-NTc5-NTg4-OTdl-ZDg0-N2-Zj-YWIw-Yj-I0-Mj-Q0-MDkx-ZA.gif" alt="Image 4">
+    <div class="slide-caption">This exercise is a form of high-intensity cardiovascular exercise that engages various muscle groups. Here's how mountain climbers can contribute to weight maintenance.</div>
+  </div>
+  <div class="slide fade">
+<h3>Squats</h3>
+    <img src="https://i.postimg.cc/mrgYLhDk/12b875db67e1c1767cd9d54f4fe2388b.gif" alt="Image 1">
+    <div class="slide-caption">Squats are an excellent exercise for maintaining a constant weight and overall fitness. They are a compound movement that primarily targets the lower body, but they also engage your core and help build muscle throughout your body</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Plank</h3>
+    <img src="https://i.postimg.cc/nzCBb5LP/506ad7de96e904629ac2983dc7820e03.gif" alt="Image 2">
+    <div class="slide-caption">Planks are an isometric core exercise that strengthens your abdominal muscles, lower back, and stabilizes your entire core, helping improve posture, reduce the risk of back pain, and enhance overall core strength and endurance. Also reduces the abdominal fat.</div>
+  </div>
+
+ 
+
+  <div class="slide fade">
+    <h3>Lunges</h3>
+    <img src="https://i.postimg.cc/LsLkBMMS/https-lottiefiles-com-animations-lunge-ls3pmle0a0.gif" alt="Image 4">
+    <div class="slide-caption">Lunges are a great bodyweight exercise that can be included in your fitness routine to help maintain a constant weight. Lunges target the muscles in your lower body, including the quadriceps, hamstrings, glutes, and calves</div>
+  </div>
+<div class="slide fade">
+    <h3>Push-Ups</h3>
+    <img src="https://i.postimg.cc/sfGzPVnq/https-lottiefiles-com-animations-military-push-ups-sfmjfnsbq9.gif" alt="Image 4">
+    <div class="slide-caption">Push-ups can be an effective exercise for weight maintenance when incorporated into your fitness routine as part of a balanced approach. While push-ups primarily target the muscles in the upper body and triceps, they offer several benefits that support weight management</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+       <div class="exercise-container">
+      
+      
+       <div class="additional-text">
+        <!-- Additional text can be added dynamically here -->
+     
+      </div>
+      <div class="stopwatch-container">
+        <div id="stopwatch">
+         <!-- CURRENT TIME -->
+         <div id="sw-time">00:00:00</div>
+   
+         <!-- CONTROLS -->
+         <input type="button" value="Reset" id="sw-rst" disabled>
+         <input type="button" value="Start" id="sw-go" disabled>
+         
+       </div>
+     <div id="totalTime"></div>
+   <button onclick="resetTotalTime()" id="res">Reset Total Time</button>
+   <div id="totalTimeDisplay"></div>
+   
+         </div>
+     
+    </div>
+    
+  </div>
+  <script src="../static/js/SWjs.js"></script>
+</body>
+</html>

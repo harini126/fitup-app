@@ -5,23 +5,43 @@
 <link rel="stylesheet" href="../static/css/style1.css">
 </head>
 <body>
-    <div>
+  <div class="container">
         <div>
-    <h1>  Here is your Fittness update</h1>
+    <h4>  Here is your Fitness Grade</h4>
   </div>
+  
   <form action='./predict' method="post">
 
         <div>
-            <h2 ><span>Grade : {{pred}}</span></h2>
+            <h2><span>Grade : {{pred}} </span></h2>
        </div>
-      <h3>FOR BETTER HEALTH & FITNESS TIPS</h3>
-    <p><a href="https://fit-up.cyclic.app/">Click here....!</a></p>
+    <!--   <ul>
+        {% set input_names = ['Age', 'Gender', 'Height(cm)', 'Weight(kg)', 'Body fat(%)', 'Diastolic (Low BP)', 'Systolic (High BP)', 'Sit-ups counts', 'Regular Exercise'] %}
+        {% for i in range(form_data|length-1) %}
+         <h3> <li>{{input_names[i] }}: {{ form_data[i] }}</li></h3>
+        {% endfor %}
+      </ul>-->
+      <table>
+        <thead>
+          
+        </thead>
+        <tbody>
+          {% for i in range(form_data|length-1) %}
+            <tr>
+              <td>{{ input_names[i] }}</td>
+              <td>{{ form_data[i] }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <h3>FOR BETTER HEALTH & FITNESS TIPS CLICK NEXT</h3>
 
   </form>
-    </div>
+    
+  <a href="homehtml.html"><button>Next</button></a>
 
-<div class="container">
-  <img src="Screenshot_20231118_163541_Chrome.jpg"  z-index="9999" class="image2">
-</div>
+  </div>
+   </div>
+  
 </body>
 </html>

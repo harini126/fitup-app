@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Timer </title>
+  <link rel="stylesheet" href="../static/css/LWcss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-AUZR/dz0hve7LzJb/7qoJnqMUJRFX7Kpe0G8HI5FdUkAvIWohUCaM2saCJLMNLHu" crossorigin="anonymous">
+
+</head>
+<body>
+  <div class="container">
+    <header class="sticky-header">
+     <a href="homehtml.html" style="text-decoration: none; color: #000000;"><div class="back-arrow">&#10094;</div></a>
+      <h2>Weight Loss Workouts</h2>
+    </header>
+    
+        
+<div class="slideshow-container">
+ 
+
+  <div class="slide fade">
+    <h3>Jumping Jacks</h3>
+    <img src="https://i.postimg.cc/x1S4zQ7v/https-lottiefiles-com-animations-jumping-jack-q3nn7crkd4.gif" alt="Image 1">
+    <div class="slide-caption">Jumping jacks provide a full-body workout, improving cardiovascular fitness, burning calories, and engaging multiple muscle groups for strength and coordination.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>High Knees</h3>
+    <img src="https://i.postimg.cc/Njc9yVjZ/Zz03-OTU1-MGU2-MTZh-OGEx-YTAy-ZWQy-YTQ4-Zm-Mx-ODdl-Ym-Iz-MA.gif" alt="Image 2">
+    <div class="slide-caption">High knees are an excellent exercise that elevates your heart rate, enhances cardiovascular endurance, and strengthens your leg muscles, while also promoting good coordination and calorie burning.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Burpees</h3>
+    <img src="https://i.postimg.cc/Hsj3Zr0T/Zz05-Mz-Rk-OTE1-NWYy-OGMw-Yz-M4-Njdk-Mj-Bj-Yj-Bh-NTll-N2-Qy-Mg.gif" alt="Image 3">
+    <div class="slide-caption">Burpees are a high-intensity, full-body exercise that combines strength training, cardiovascular conditioning, and explosiveness, making them effective for improving overall fitness and burning calories.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Mountain Climbing</h3>
+    <img src="https://i.postimg.cc/HL7kB9nb/Zz0x-OTFj-NTc5-NTg4-OTdl-ZDg0-N2-Zj-YWIw-Yj-I0-Mj-Q0-MDkx-ZA.gif" alt="Image 4">
+    <div class="slide-caption">Mountain climbers are a dynamic exercise that targets your core, arms, and legs, providing an intense workout that improves muscular endurance, cardiovascular fitness, and supports fat loss.</div>
+  </div>
+  <div class="slide fade">
+<h3>Squats</h3>
+    <img src="https://i.postimg.cc/mrgYLhDk/12b875db67e1c1767cd9d54f4fe2388b.gif" alt="Image 1">
+    <div class="slide-caption">Squats are a compound exercise that primarily targets your leg muscles, including the quadriceps, hamstrings, and glutes, while also engaging your core and lower back, promoting lower body strength, muscle development, and improved functional fitness.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Plank</h3>
+    <img src="https://i.postimg.cc/nzCBb5LP/506ad7de96e904629ac2983dc7820e03.gif" alt="Image 2">
+    <div class="slide-caption">Planks are an isometric core exercise that strengthens your abdominal muscles, lower back, and stabilizes your entire core, helping improve posture, reduce the risk of back pain, and enhance overall core strength and endurance. Also reduces the abdominal fat.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Crunches</h3>
+    <img src="https://i.postimg.cc/TYnW4J4j/https-lottiefiles-com-animations-reverse-crunches-79p2fmts7z.gif" alt="Image 3">
+    <div class="slide-caption">Crunches are an abdominal exercise that focuses on the rectus abdominis muscles, providing improved core strength and definition, as well as helping to support better posture and reduce the risk of lower back pain.</div>
+  </div>
+
+  <div class="slide fade">
+    <h3>Lunges</h3>
+    <img src="https://i.postimg.cc/LsLkBMMS/https-lottiefiles-com-animations-lunge-ls3pmle0a0.gif" alt="Image 4">
+    <div class="slide-caption">Lunges into your fitness routine, along with a balanced diet and other cardiovascular exercises, can contribute to weight loss and improved overall fitness.</div>
+  </div>
+<div class="slide fade">
+    <h3>Push-Ups</h3>
+    <img src="https://i.postimg.cc/sfGzPVnq/https-lottiefiles-com-animations-military-push-ups-sfmjfnsbq9.gif" alt="Image 4">
+    <div class="slide-caption">Push-ups can help with weight loss and overall fitness, it's important to combine them with a well-rounded exercise program that includes cardiovascular exercises and a balanced diet to achieve significant weight loss.</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+       <div class="exercise-container">
+      
+      
+       <div class="additional-text">
+        <!-- Additional text can be added dynamically here -->
+     
+      </div>
+      <div class="stopwatch-container">
+        <div id="stopwatch">
+         <!-- CURRENT TIME -->
+         <div id="sw-time">00:00:00</div>
+   
+         <!-- CONTROLS -->
+         <input type="button" value="Reset" id="sw-rst" disabled>
+         <input type="button" value="Start" id="sw-go" disabled>
+         
+       </div>
+     <div id="totalTime"></div>
+   <button onclick="resetTotalTime()" id="res">Reset Total Time</button>
+   
+   
+  
+
+         </div>
+     
+    </div>
+    
+  </div>
+  <script src="../static/js/LWjs.js"></script>
+</body>
+</html>

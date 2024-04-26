@@ -18,6 +18,51 @@ def index():
 def index1():
     return render_template("index1.html")
 
+
+@app.route('/homehtml.html')
+def index2():
+    return render_template("homehtml.html")
+
+@app.route('/LWhtml.html')
+def index3():
+    return render_template("LWhtml.html")
+
+@app.route('/GWhtml.html')
+def index4():
+    return render_template("GWhtml.html")
+
+@app.route('/GMhtml.html')
+def index5():
+    return render_template("GMhtml.html")
+
+@app.route('/SWhtml.html')
+def index6():
+    return render_template("SWhtml.html")
+
+@app.route('/Wgoalshtml.html')
+def index7():
+    return render_template("Wgoalshtml.html")
+
+@app.route('/Dgoalshtml.html')
+def index8():
+    return render_template("Dgoalshtml.html")
+
+@app.route('/LWdiethtml.html')
+def index9():
+    return render_template("LWdiethtml.html")
+
+@app.route('/GWdiethtml.html')
+def index10():
+    return render_template("GWdiethtml.html")
+
+@app.route('/GMdiethtml.html')
+def index11():
+    return render_template("GMdiethtml.html")
+
+@app.route('/SWdiethtml.html')
+def index12():
+    return render_template("SWdiethtml.html")
+
 @app.route('/predict',methods=['POST','GET'])  #gets inputs data from client(browser) to Flask Server - to give to ml model
 def predict():
     features = [(x) for x in request.form.values()]
@@ -50,24 +95,41 @@ def predict():
     df.replace("M", 0, inplace=True)
     df.replace("F", 1, inplace=True)
     X = df.iloc[:, :-1].values
-    print(X[0])
-    print(len(X[0]))
-
     sst=StandardScaler().fit(X)
-    print(len(final))
+    
     output = model.predict(sst.transform([final]))
-    print(output)
-    print(sst.transform([final]))
 
     if output[0]==1:
-        return render_template('index1.html',pred=f'A, You are FIT and HEALTHY')
+        return render_template('index1.html', pred=f'A, You are FIT and HEALTHY', form_data=features)
     elif output[0]==2:
-        return render_template('index1.html',pred=f'B, You need to Concentrate on FIT and HEALTHY')
+        return render_template('index1.html', pred=f'B, You need to Concentrate on FIT and HEALTHY', form_data=features)
     elif output[0]==3:
-        return render_template('index1.html',pred=f'C, You need to take care of your fitness')
+        return render_template('index1.html', pred=f'C, You need to take care of your fitness', form_data=features)
     else:
-        return render_template('index1.html',pred=f'D, You need to improve your fitness')
+        return render_template('index1.html', pred=f'D, You need to improve your fitness', form_data=features)
+    # print(X[0])
+    # print(len(X[0]))
 
+    # sst=StandardScaler().fit(X)
+    # print(len(final))
+    # output = model.predict(sst.transform([final]))
+    # print(output)
+    # print(sst.transform([final]))
+
+    # if output[0]==1:
+    #     return render_template('index1.html', form_data=features, pred=f'A, You are FIT and HEALTHY')
+    # elif output[0]==2:
+    #     return render_template('index1.html',form_data=features, pred=f'B, You need to Concentrate on FIT and HEALTHY')
+    # elif output[0]==3:
+    #     return render_template('index1.html',form_data=features, pred=f'C, You need to take care of your fitness')
+    # else:
+    #     return render_template('index1.html',form_data=features, pred=f'D, You need to improve your fitness')
+
+
+@app.route('/')
+def check_grade():
+    # Add your logic here to generate the appropriate response
+    return render_template('index.html')
 
 
 

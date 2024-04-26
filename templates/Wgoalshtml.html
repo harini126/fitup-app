@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/Wgoalscss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <title>Workout Tracker</title>
+</head>
+
+<body> 
+   
+    <div class="container">
+        <h1><button class="backbt" onclick="goToPage2()">&#10094;</button>Workout Goals</h1>
+        <div id="errorMessage" class="error-message"></div>
+        <div id="workoutForm">
+            <label for="workoutName">Workout Name:</label>
+            <input type="text" id="workoutName" placeholder="Enter workout name">
+
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" placeholder="Enter duration">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" placeholder="Enter notes"></textarea>
+
+            <button onclick="addWorkout()">Add Workout</button>
+        </div>
+          
+        <div id="workoutList" class="card-container">
+            <!-- Display workout records dynamically here -->
+        </div>
+    </div>
+
+    <script src="../static/js/Wgoalsjs.js"></script>
+</body>
+
+</html>
