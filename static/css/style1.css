@@ -22,7 +22,18 @@ body {
  
   backdrop-filter: blur(15px); /* Glass-like transparent effect */
  }
- 
+  @media only screen and (max-width: 600px) {
+   /* Adjustments for smaller screens */
+   .container {
+       max-width: 75%; /* Adjust as needed */
+   }
+
+   /* Additional adjustments for specific elements */
+   button {
+       padding: 8px; /* Adjust as needed */
+   }
+}
+
  .card-container {
     display: flex;
     flex-wrap: wrap;
